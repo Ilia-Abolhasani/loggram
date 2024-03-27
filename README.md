@@ -1,4 +1,4 @@
-# API Armor
+# Telegram error tracker
 
 Telegram-error-tracker is a Python package.
 
