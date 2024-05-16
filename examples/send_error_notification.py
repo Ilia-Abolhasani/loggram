@@ -5,7 +5,7 @@ sys.path.append("..")
 from telelog.telelog import Telelog 
 sys.path.remove("..")
 
-token = "YOUR_TELEGRAM_BOT_TOKEN" 
+token = "YOUR_TELEGRAM_BOT_TOKEN"
 chat_id = "YOUR_TELEGRAM_CHAT_ID"
 
 if __name__=="__main__":

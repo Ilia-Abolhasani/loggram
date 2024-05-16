@@ -9,7 +9,7 @@ class Telelog:
         self.verbose = verbose
         self.bot = Bot(token=token)
         self.chat_id = chat_id
-        self.log_file = "/home/ubuntu/Desktop/telelog/telelog.log"
+        self.log_file = "telelog.log"
 
     def _log(self, text):
         if self.verbose:
