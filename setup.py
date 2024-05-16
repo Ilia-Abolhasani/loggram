@@ -1,9 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name="telegram-error-tracker",
-    version="0.1.0",
-    packages=[],
-    install_requires=[        
+    name="telelog",
+    version="1.1.0",
+    packages=find_packages(),
+    install_requires=[  
+        'python-telegram-bot',      
     ],    
 )
