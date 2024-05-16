@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="telelog",
+    name="loggram",
     version="1.0.0",
     packages=find_packages(),
     install_requires=[
@@ -12,7 +12,7 @@ setup(
     description="A package for sending logs to Telegram channels",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url="https://github.com/Ilia-Abolhasani/telelog",
+    url="https://github.com/Ilia-Abolhasani/loggram",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

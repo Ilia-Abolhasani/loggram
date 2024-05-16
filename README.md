@@ -8,7 +8,7 @@ Telegram-error-tracker is a Python package.
 ## Installation
 
 ```bash
-pip install telegram-error-tracker
+pip install loggram
 ```
 
 ## Usage

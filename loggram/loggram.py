@@ -4,12 +4,12 @@ from telegram import Bot
 from telegram.error import TelegramError
 
 
-class Telelog:
+class Loggram:
     def __init__(self, token, chat_id, verbose=False):
         self.verbose = verbose
         self.bot = Bot(token=token)
         self.chat_id = chat_id
-        self.log_file = "telelog.log"
+        self.log_file = "loggram.log"
 
     def _log(self, text):
         if self.verbose:
