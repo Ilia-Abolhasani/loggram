@@ -1,17 +1,44 @@
-# Telegram error tracker
+# LogGram
 
-Telegram-error-tracker is a Python package.
+LogGram is a Python package for sending error logs and messages to Telegram channels or groups. It allows you to easily track errors and notifications in real-time using Telegram bots.
 
 ## Features
 
+- Send error tracebacks to a specified Telegram channel or group
+- Support for both synchronous and asynchronous message sending
+- Configurable logging with file output
+- Easy setup and integration
 
 ## Installation
 
 ```bash
 pip install loggram
 ```
-
 ## Usage
+
+1. **Create a Telegram Bot:**
+   - Follow [this guide](https://core.telegram.org/bots#6-botfather) to create a new bot and obtain your bot token.
+   - Add the bot to your desired channel or group and promote it as an admin.
+
+2. **Initialize LogGram:**
+   Here's an example of how to use LogGram in your project:
+
+    ```python    
+    from loggram import Telelog
+
+    # Replace with your actual bot token and chat ID
+    token = "YOUR_TELEGRAM_BOT_TOKEN"
+    chat_id = "YOUR_TELEGRAM_CHAT_ID"
+
+    # Create an instance of Telelog
+    logger = Telelog(token, chat_id, verbose=True)
+
+    # example
+    try:
+        1 / 0  # Code that raises an error
+    except Exception as e:
+        logger.send_traceback(str(e))
+    ```
 
 ## Contributing
 Contributions are welcome! If you find a bug or have a suggestion, please open an issue.
