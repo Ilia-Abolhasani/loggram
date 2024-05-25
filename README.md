@@ -24,14 +24,14 @@ pip install loggram
    Here's an example of how to use LogGram in your project:
 
     ```python    
-    from loggram import Telelog
+    from loggram import Loggram
 
     # Replace with your actual bot token and chat ID
     token = "YOUR_TELEGRAM_BOT_TOKEN"
     chat_id = "YOUR_TELEGRAM_CHAT_ID"
 
-    # Create an instance of Telelog
-    logger = Telelog(token, chat_id, verbose=True)
+    # Create an instance of Loggram
+    logger = Loggram(token, chat_id, verbose=True)
 
     # example
     try:
